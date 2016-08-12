@@ -1,0 +1,20 @@
+{
+    "name": "kayel/lawol",
+    "type": "library",
+    "description": "Lawol, the flexible and fast url rooter for codeigniter framework",
+    "keywords": ["url", "routing"],
+    "homepage": "http://lawol.kayel.io",
+    "authors": [
+        {
+            "name": "Dia Warsic",
+            "email": "diawarsic@gmail.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "support": {
+        "forum": "https://groups.google.com/forum/#!forum/lawol-users"
+    },
+    "require": {
+        "php": ">=5.2.7"
+    }
+}
