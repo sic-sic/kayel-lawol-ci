@@ -21,6 +21,10 @@ class FilterFunc {
         return strlen($data) <= $length;
     }
     
+    public function length($data, $length) {
+        return strlen($data) == $length;
+    }
+    
     public function callback($data, $callable) {
         return (is_string($callable)) ? call_user_func_array(array(get_instance(), $callable), array($data)) :
             call_user_func_array(array($callable, func_get_arg(2)), array($data)) ;
