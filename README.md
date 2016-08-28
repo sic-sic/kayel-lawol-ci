@@ -1,2 +1,2 @@
 # kayel-lawol-ci
-The flexible beautiful urls maker for CodeIgniter framework
+The flexible Library for CodeIgniter framework to make beautiful urls
