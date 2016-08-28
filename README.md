@@ -1,2 +1,2 @@
 # kayel-lawol-ci
-The flexible and fast url rooter for Codeigniter framework
+The flexible beautiful urls maker for CodeIgniter framework
