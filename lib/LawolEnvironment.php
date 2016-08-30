@@ -17,10 +17,9 @@ class LawolEnvironment {
     private $rsegments;
     private $routeProvider;
     
-    public function __construct(CI_URI $uri) {
-        
-        $this->load();
-        $this->rsegments = $this->prepare_rsegments($uri);
+    public function __construct() {        
+        require_once 'Autoload.php';
+        $this->rsegments = $this->prepare_rsegments(get_instance()->uri);
         $this->routeProvider = new RouteProvider();
     }
     
@@ -38,19 +37,6 @@ class LawolEnvironment {
     
     public function add_route($route, $method, $params = array()) {
         $this->routeProvider->addRoute(substr($route, 1), $method, $params);
-    }
-    
-    private function load() {
-        require_once 'checker/Checker.php';
-        
-        require_once 'filter/Filter.php';
-        require_once 'filter/FilterFunc.php';
-        require_once 'filter/FilterParser.php';
-
-        require_once 'route/Route.php';
-        require_once 'route/RouteFinder.php';
-        require_once 'route/RouteProvider.php';
-        require_once 'route/ParamFinder.php';
     }
     
     private function prepare_rsegments($uri) {
