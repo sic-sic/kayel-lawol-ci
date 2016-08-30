@@ -30,7 +30,7 @@ class FilterFunc {
             call_user_func_array(array($callable, func_get_arg(2)), array($data)) ;
     }
     
-    public function matchs($data) {
+    public function matches($data) {
         $args = func_get_args();
         for ($i = 1; $i < count($args); $i++) {
             if ($data == $args[$i]) {
