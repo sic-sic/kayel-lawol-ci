@@ -4,8 +4,7 @@ namespace Lawol;
 
 use Lawol\Route\RouteProvider,
     Lawol\Route\RouteFinder,
-    Lawol\Route\ParamFinder,
-    CI_URI;
+    Lawol\Route\ParamFinder;
 
 /**
  * Description of LawolEnvironment
